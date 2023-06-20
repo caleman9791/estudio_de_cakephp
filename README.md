@@ -1,6 +1,10 @@
 <h1>
-	Probando html en markdown y no tener que aprender mas maqueado para esto
+	Estudios de CakePHP
 </h1>
 <p>
-	Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ratione rem mollitia necessitatibus consequuntur exercitationem quod inventore. Earum, illo accusamus ratione. Voluptas perspiciatis maxime est, ducimus, asperiores dolorum ullam commodi.
+	Los estudios están basados en la documentación  oficial del marco de trabajo. Para ver la documentación oficial puede visitar el
+	<a href="https://cakephp.org" target="_blank">
+		sitio web de CakePHP
+	</a>
+	.
 </p>
