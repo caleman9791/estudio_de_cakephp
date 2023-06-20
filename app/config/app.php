@@ -290,11 +290,44 @@ return [
 
 			// * For MariaDB/MySQL the internal default changed from utf8 to utf8mb4, aka full utf-8 support, in CakePHP 3.6
 
+			// Para MariaDB/MySQL, el valor predeterminado interno cambió de utf8 a utf8mb4, también conocido como soporte completo de utf-8, en CakePHP 3.6
+
 			//'encoding' => 'utf8mb4',
 
 			// * If your MySQL server is configured with `skip-character-set-client-handshake`
 			// * then you MUST use the `flags` config to set your charset encoding.
 			// * For e.g. `'flags' => [\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8mb4']`
+
+			// * Si su servidor MySQL está configurado con
+			// `skip-character-set-client-handshake`
+			// * entonces DEBE usar la configuración
+			// `flags` para establecer la codificación de su juego de caracteres.
+			// * Por ej.
+			// `'flags' => [\PDO::MYSQL_ATTR_INIT_COMMAND => 'ESTABLECER NOMBRES utf8mb4']`
+
+			// @caleman9791
+			// A que se refieren con esto : skip-character-set-client-handshake
+
+			// @ChatGPT
+			// La expresión "skip-character-set-client-handshake" se refiere a una configuración o
+			// opción en un servidor de bases de datos MySQL.
+
+			// Cuando un cliente se conecta a un servidor MySQL, se realiza un "handshake" o intercambio
+			// inicial de información para establecer la comunicación. Durante este proceso, el cliente y
+			// el servidor negocian varios parámetros, incluido el juego de caracteres a utilizar para la comunicación.
+
+			// El parámetro "skip-character-set-client-handshake" es una opción de configuración del servidor
+			// MySQL que permite omitir la negociación del juego de caracteres durante el handshake. Si se activa
+			// esta opción, el servidor MySQL no intentará determinar automáticamente el juego de caracteres preferido
+			// por el cliente, sino que utilizará un juego de caracteres predeterminado predefinido.
+
+			// Esta opción puede ser útil en ciertos escenarios donde se desea evitar la negociación del juego de
+			// caracteres o cuando se desea establecer un juego de caracteres específico de forma predeterminada
+			// sin considerar las preferencias del cliente.
+
+			// Es importante tener en cuenta que el uso de esta opción puede afectar la interoperabilidad y la
+			// capacidad de comunicación adecuada entre el cliente y el servidor si no se configura correctamente.
+			// Por lo tanto, debe utilizarse con precaución y solo cuando se comprendan bien sus implicaciones.
 
 			'flags' => [],
 			'cacheMetadata' => true,
